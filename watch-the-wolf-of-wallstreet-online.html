@@ -49,9 +49,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                 
+                 	
+                	<li class="page-scroll">
+                        <a href="#watch">Watch</a>
+                    </li>
                     <li class="page-scroll">
-                        <a href="test.html">Back</a>
+                        <a href="#description">Description</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://www.youtube.com/watch?v=v9S_dYuq0vE">Trailer</a>
                     </li>
                 </ul>
             </div>
@@ -62,31 +68,30 @@
 
     <!-- Header -->
 
-<!--
-        
-          
-        
-          
-        
-          
-        
- -->
 
 
     
     <!-- Portfolio Grid Section -->
-    <center>
-    <section id="portfolio" class="features">
-        <center>
-    <div class="container">
-        <center>
+<center>
 
-           <iframe width="854" height="510" src="//www.youtube.com/embed/lB95KLmpLR4" frameborder="0" allowfullscreen></iframe>
-
+    <section id="watch" class="frames">
+    <div class="container">  
+        <center>
+        <section class="title">
+        <div class="under"><h1>The Wolf of Fucking Wallstreet<h1></div>
+        </section>
         </center>
+        <center>    
+<IFRAME SRC="http://thevideos.tv/embed-zhguyzlzixmy-728x410.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=728 HEIGHT=410></IFRAME>
+        </center>
+
+    </div>
     </section>
-    </center>
-    <footer class="text-center">
+
+</center>
+
+
+<footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -106,32 +111,32 @@
                     <h1>Description:</h1>
          
                 </div>
-                    
+                	
 
             </div>
             <div class="row">
 
                 <div class="col-lg-4 col-lg-offset-2"> <i class="fa fa-quote-left"></i>
-                    Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the cofounder who was later squeezed out of the business.
+                    In The Wolf of Wall Street DiCaprio would play Belfort, a Long Island penny stockbroker who served 20 months in prison for refusing to cooperate in a massive 1990s securities fraud case that involved widespread corruption on Wall Street and in the corporate banking world, including mob infiltration.
                     <i class="fa fa-quote-right"></i>
                 </div>
                 <div class="col-lg-4">
 
                     <p>
-                    <i class="fa fa-video-camera">   Director: David Fincher</i>
-                    </p>
-                    <p>
-                    <i class="fa fa-pencil fa-fw"></i>   Writers: Aaron Sorkin, Ben Mezrich 
-                    </p>
-                    <p>
-                    <i class="fa fa-users"></i>    Stars: Jesse Eisenberg, Andrew Garfield, Justin Timberlake
-                    </p>
+                    <i class="fa fa-video-camera">   Director: Martin Scorsese</i>
+					</p>
+
+					<p>
+					<i class="fa fa-users"></i>    Stars: <a href=""> Leonardo DiCaprio</a>, <a href="">Jonah Hill</a>, <a href="">Jon Favreau
+</a>
+					</p>
+
                 </div>
-         
+                
             </div>
         </div>
-    </section>
 
+    </section>
 
 
     <style type="text/css">
@@ -140,7 +145,9 @@
         padding: 1px;
         vertical-align: super;
     }
- 
+    
+
+
 </style>
         <!-- Footer -->
 
@@ -159,10 +166,91 @@ padding: 25px 0;
 background-color: rgba(231, 76, 76, 0.93);
 }
     </style>
-     <!-- Portfolio Modals -->
- 
 
-    
+
+
+
+
+    <script type="text/javascript">
+   // popup examples
+$( document ).on( "pagecreate", function() {
+    // The window width and height are decreased by 30 to take the tolerance of 15 pixels at each side into account
+    function scale( width, height, padding, border ) {
+        var scrWidth = $( window ).width() - 30,
+            scrHeight = $( window ).height() - 30,
+            ifrPadding = 2 * padding,
+            ifrBorder = 2 * border,
+            ifrWidth = width + ifrPadding + ifrBorder,
+            ifrHeight = height + ifrPadding + ifrBorder,
+            h, w;
+        if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+            w = ifrWidth;
+            h = ifrHeight;
+        } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+            w = scrWidth;
+            h = ( scrWidth / ifrWidth ) * ifrHeight;
+        } else {
+            h = scrHeight;
+            w = ( scrHeight / ifrHeight ) * ifrWidth;
+        }
+        return {
+            'width': w - ( ifrPadding + ifrBorder ),
+            'height': h - ( ifrPadding + ifrBorder )
+        };
+    };
+    $( ".ui-popup iframe" )
+        .attr( "width", 0 )
+        .attr( "height", "auto" );
+    $( "#popupVideo" ).on({
+        popupbeforeposition: function() {
+            // call our custom function scale() to get the width and height
+            var size = scale( 497, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+});
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Portfolio Modals -->
+
 
      <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery-1.11.0.js"></script>
