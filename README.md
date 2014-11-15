@@ -1,31 +1,22 @@
-Freelancer Jekyll theme
+Nirviral
 =========================
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/templates/freelancer/)
 
-## How to use
- - Place a image in `/img/portoflio/`
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2014-07-18
-img: cabin.png
-alt: image-alt
-project-date: July 2014
-client: The Client
-category: Web Development
-description: The description of the project
+Source for Nirviral.com
 
----
-```
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
+=========================
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+Four in the mornin', and I'm zonin'
+They say I'm possessed, it's an omen
+I keep it 300, like the Romans
+300 bitches, where the Trojans?
+Baby we livin' in the moment
+I've been a menace for the longest
+But I ain't finished, I'm devoted
+And you know it, and you know it
+
+-Kanye West
+
 
 =========
-For more details, read [documentation](http://jekyllrb.com/)
