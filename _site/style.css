@@ -12,6 +12,11 @@
  */
 
 
+h1, .h1 {
+font-size: 30px;
+}
+
+
 div.under {
 width: 42%;
 background: rgba(231, 76, 76, 0.93);
